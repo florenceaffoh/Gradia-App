@@ -122,7 +122,7 @@ with gr.Blocks(theme=gr.themes.Base(primary_hue="stone",neutral_hue="stone",)) a
     text = gr.Markdown( "<div style='text-align: center;'><span style='font-size: 20px; font-weight: bold; color: black;'>Welcome!  Enter your customer's attributes to predict wheither the customer will churn or not.</span></div>")
     with gr.Row():
         with gr.Column():
-            tenure = gr.components.Slider(label="Tenure (months)", minimum=1, maximum=72, step=1)
+            tenure = gr.components.Slider(label="Tenure (months)", minimum=1, maximum=12, step=1)
             MonthlyCharges = gr.components.Slider(label="Monthly Charges", step=0.05, maximum=7000)  # Set a default value
             TotalCharges = gr.components.Slider(label="Total Charges", step=0.05, maximum=10000)     # Set a default value
 
