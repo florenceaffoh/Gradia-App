@@ -14,22 +14,22 @@ yes_or_no = ["Yes", "No"]
 
 # Load the Gradio toolkit
 # Load the trained model
-with open('optimized_gb_classifier.pkl', 'rb') as model_file:
+with open(r'src\assets\optimized_gb_classifier.pkl', 'rb') as model_file:
     optimized_gb_classifier = pickle.load(model_file)
 
 # Load the transformers (cat_preprocessor and num_transformer)
-with open('cat_preprocessor.pkl', 'rb') as cat_preprocessor_file:
+with open(r'src\assets\cat_preprocessor.pkl', 'rb') as cat_preprocessor_file:
     cat_preprocessor = pickle.load(cat_preprocessor_file)
 
-with open('num_transformer.pkl', 'rb') as num_transformer_file:
+with open(r'src\assets\num_transformer.pkl', 'rb') as num_transformer_file:
     num_transformer = pickle.load(num_transformer_file)
 
-with open('cat_transformer.pkl', 'rb') as cat_transformer_file:
+with open(r'src\assets\cat_transformer.pkl', 'rb') as cat_transformer_file:
     cat_transformer = pickle.load(cat_transformer_file)
 
 # Create a dictionary to hold all the components
 
-with open('gradio_toolkit.pkl', 'rb') as toolkit_file:
+with open(r'src\assets\gradio_toolkit.pkl', 'rb') as toolkit_file:
     gradio_toolkit = pickle.load(toolkit_file)
 
 # Extract the model and transformers
